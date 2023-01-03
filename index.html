@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tesla</title>
     <link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
     <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
@@ -12,16 +12,16 @@
 </head>
 <body>
     <div class="main-container" id="main">
-        <div class="header">
+        <div class="header" id="header">
             <div>
-                <img src="img/Tesla_Inc.-Wordmark-Black-Logo.wine-6bbe293a.webp" alt="">
+                <img src="img/Tesla_Inc.-Wordmark-Black-Logo.wine-6bbe293a.webp" alt="" id="teslaImg">
                 
             </div>
             <div style="margin-left: auto; margin-right: auto;">
-                <button onclick="btnS()">Model S</button>
-                <button onclick="btn3()">Model 3</button>
-                <button onclick="btnX()">Model X</button>
-                <button onclick="btnY()">Model Y</button>
+                <button id="btnS" onclick="btnS()">Model S</button>
+                <button id="btn3" onclick="btn3()">Model 3</button>
+                <button id="btnX" onclick="btnX()">Model X</button>
+                <button id="btnY" onclick="btnY()">Model Y</button>
             </div>
             <div style="position: absolute; top: 0; right: 0;">
                 <button>Menu</button>
@@ -33,7 +33,7 @@
             <p style="font-size: 20px;" id="modelDesc">Plaid</p>
         </div>
         <div style="padding-left: 20px; padding-right: 20px;">
-            <div class="specs" style="display: flex;  width: 80%; height: 20px;">
+            <div class="specs" style="display: flex;  width: 80%; height: 20px;" id="specs">
                 <div>
                     <h1 id="th1">396 mi</h1>
                     <p id="tp1">Range (EPA est.)</p>
@@ -55,24 +55,142 @@
                 </div>           
                 
             </div>
-            <button style="position: absolute; right: 30px; top: 80vh;">Message</button>
+            <button class="msg" style="position: absolute; right: 30px; top: 80vh;"></button>
             
         </div>     
 
     </div>
-    <div class="desc1">
+    <div class="desc1" id="desc1">
         <h1 style="text-align: center;color: white; padding-top: 30px;">
             Interior of the Future</h1>
     </div>
-    <div class="desc2">
-
+    <div class="desc2" style="position: relative;" id="desc2">
+        <div class="specs" style="display: flex;  width: 80%; height: 20px; bottom: 10vh; position: absolute; color: black;">
+            <div>
+                <h1 id="th1">1,020 hp</h1>
+                <p id="tp1">Peak Power</p>
+            </div>
+            <div>
+                <h1 id="th2">9.23 s</h1>
+                <p id="tp2">@155 mph 1/4 mile</p>
+            </div>
+            <div>
+                <h1 id="th3">1.99 s</h1>
+                <p id="tp3">0-60 mph*</p>
+            </div>        
+            
+        </div>
     </div>
-    <div class="desc3">
+
+    <div class="desc3" id="desc3">
         <h1>Electric Powertrain</h1>
         <p>Model S platforms unite powertrain and battery technologies for unrivaled performance, range <br>
             and efficiency. New module and pack thermal architecture allows faster charging and gives you more power <br>
              and endurance in all conditions.</p>
         <img src="img/sd3.jpg" alt="">
     </div>
+
+
+    <div class="desc4" id="desc4">
+        <img src="img/xd1.png" alt="">
+        <aside>
+            <h2>Built for Safety</h2><br>
+            <p>Safety is the most important part of every Tesla. <br>
+                We design our vehicles to exceed <b>safety standards.</b></p><br>
+            <h4>5-Star Rating</h4>
+            <p>Model 3 achieved NHTSA 5-star safety<br>ratings in every category and subcategory.</p><br>
+            <h4>Top Safety Pick+</h4>
+            <p>Model 3 received the IIHS Top Safety Pick+ <br> award, with top ratings in all crashworthiness <br> and front crash prevention categories.</p>
+
+        </aside>
+    </div>
+
+
+    <div class="desc5" style="position: relative;" id="desc5">
+        
+            <div class="specs" style="display: flex;  width: 80%; height: 20px; bottom: 10vh; position: absolute">
+                <div>
+                    <h1 id="th1">3.1s</h1>
+                    <p id="tp1">Quickest acceleration—from zero to 60 <br> 
+                        mph* in as little as 3.1 seconds</p>
+                </div>
+                <div>
+                    <h1 id="th2">162 mph</h1>
+                    <p id="tp2">Improved handling and aerodynamics <br>
+                        allow for a top speed of 162 mph</p>
+                </div>
+                <div>
+                    <h1 id="th3">AWD</h1>
+                    <p id="tp3">Dual Motor All-Wheel Drive instantly<br>
+                        controls traction and torque, in all weather</p>
+                </div>        
+                
+            </div>
+    </div>
+
+
+    <div class="desc6" id="desc6">
+        <h1 style="text-align: center;color: black; padding-top: 30px;">
+            Interior of the Future</h1>
+    </div>
+
+
+    <div class="desc7" style="position: relative;" id="desc7">
+        <div class="specs" style="display: flex;  width: 80%; height: 20px; bottom: 10vh; position: absolute; color: black;">
+            <div>
+                <h1 id="th1">1,020 hp</h1>
+                <p id="tp1">Peak Power</p>
+            </div>
+            <div>
+                <h1 id="th2">9.23 s</h1>
+                <p id="tp2">@155 mph 1/4 mile</p>
+            </div>
+            <div>
+                <h1 id="th3">1.99 s</h1>
+                <p id="tp3">0-60 mph*</p>
+            </div>        
+            
+        </div>
+    </div>
+
+    <div class="desc8" id="desc8">
+        <img src="img/y1.png" alt="">
+        <aside>
+            <h2>Built for Safety</h2><br>
+            <p>Safety is the most important part of every Tesla. <br>
+                We design our vehicles to exceed <b>safety standards.</b></p><br>
+            <h4>5-Star Rating</h4>
+            <p>Model Y achieved NHTSA 5-star safety<br>ratings in every category and subcategory.</p><br>
+            <h4>Top Safety Pick+</h4>
+            <p>Model Y received the IIHS Top Safety Pick+ <br> award, with top ratings in all crashworthiness <br> and front crash prevention categories.</p>
+
+        </aside>
+    </div>
+
+    <div class="desc9" style="position: relative;" id="desc9"> 
+
+        <div class="specs" style="display: flex;  width: 80%; height: 20px; bottom: 10vh; position: absolute">
+            <div>
+                <h1 id="th1">2</h1>
+                <p id="tp1">Independent motors digitally control <br> 
+                    torque to the front and rear wheels</p>
+            </div>
+            <div>
+                <h1 id="th2">3.5 s </h1>
+                <p id="tp2">Quickest acceleration—from zero to 60<br>
+                    mph* in as little as 3.5 seconds</p>
+            </div>
+            <div>
+                <h1 id="th3">Weather</h1>
+                <p id="tp3">Capable in rain, snow, mud and off-road<br>
+                    with superior traction control</p>
+            </div>        
+            
+        </div>
+    </div>
+
+
+
+
 </body>
 </html>
