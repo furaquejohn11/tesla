@@ -43,7 +43,7 @@ body {
 }
 .specs {
     position: absolute ;
-    bottom: 90px;
+    bottom: 10vh;
     width: 70vh;
     text-align: center;
     color: black;
