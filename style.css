@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gotham', sans-serif;
+}
+.main-container {
+    background-image: url('img/models.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    height: 100vh;
+    width: 100vw;
+    transition: background-image 1s;
+    
+}
+.header {
+    height: 70px;
+    width: 100%;
+    background-color:transparent ;
+    padding: 0;
+    display: flex;
+}
+.header img {
+    width: 130px;
+    height: 90px;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+.header button {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.header button:hover {
+    color: rgb(239, 239, 240);
+}
+.titleDiv h1, .titleDiv p {
+    transition: 3s;
+}
+.specs {
+    position: absolute ;
+    bottom: 90px;
+    width: 70vh;
+    text-align: center;
+    color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.specs div {
+    margin-left: auto;
+    margin-right: auto;
+}
+.specs button {
+    width: 130px;
+    height: 40px;
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+.specs button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.desc1 {
+    background-image: url('img/sd1.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    height: 100vh;
+    width: 100vw;
+    transition: background-image 1s;
+}
+.desc2 {
+    background-image: url('img/sd2.png');
+    background-size: cover;  
+    background-repeat: no-repeat;  
+    height: 100vh;
+    width: 100vw;
+    transition: background-image 1s;
+}
+.desc3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f4f4f4;
+}
+.desc3 h1 {
+    padding-top: 5rem;
+    padding-left: 25vw;;
+}
+.desc3 p {
+    padding-left: 25vw;;
+}
+.desc3 img {
+    width: 60%;
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    border-radius: 30px;
+}
